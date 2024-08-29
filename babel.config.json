@@ -1,0 +1,14 @@
+{
+  "presets": [
+    // preset-env는 브라우저 환경에 맞게 자동으로 설정해준다.
+    "@babel/preset-env",
+    // preset-react는 react 코드를 변환해준다.
+    [
+      "@babel/preset-react",
+      {
+        // 이 설정이 있으면 react를 명시적으로 import 할 필요가 없다.
+        "runtime": "automatic"
+      }
+    ]
+  ]
+}
