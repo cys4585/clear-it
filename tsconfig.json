@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    // 최신 ECMAScript 기능 사용 (Babel이 실제 변환을 담당)
+    "target": "esnext",
+
+    // 타입 체킹을 위한 라이브러리 (기본값: target에 따라 다름)
+    "lib": ["dom", "dom.iterable", "esnext"],
+
+    // 모든 엄격한 타입-체킹 옵션 활성화 (기본값: false)
+    "strict": true,
+
+    // JSX 구문 지원 (기본값: 'preserve')
+    "jsx": "react-jsx",
+
+    // 모듈 해석 방식을 Node.js 방식으로 설정 (기본값: 'classic')
+    "moduleResolution": "node",
+
+    // 모듈 시스템 설정 (Webpack이 처리하므로 'esnext' 사용)
+    "module": "esnext",
+
+    // 각 파일을 개별 모듈로 처리 (Babel과 함께 사용 시 권장)
+    "isolatedModules": true,
+
+    // CommonJS 모듈을 ES6 모듈처럼 사용 가능 (기본값: false)
+    "esModuleInterop": true,
+
+    // JSON 모듈 임포트 허용 (기본값: false)
+    "resolveJsonModule": true,
+
+    // 대소문자를 구분하여 모듈 임포트 (기본값: true)
+    "forceConsistentCasingInFileNames": true
+  },
+  // 컴파일할 파일 경로 설정
+  "include": ["src"]
+}
